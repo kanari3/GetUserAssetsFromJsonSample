@@ -39,24 +39,25 @@ class ViewController: UIViewController {
 
         let deviceName = "iPhone X" // org: YMTGetDeviceName.share.getDeviceName()
         let systemVersion = UIDevice().systemVersion
-        let device = "\(deviceName)_\(systemVersion)"
+        let device = testDevice(rawValue: "\(deviceName)_\(systemVersion)")
 
         if !isBitrise() {
             return userList.local
         }
 
         switch device {
-        case testDevice.bot1.rawValue:
+        case .bot1:
             return userList.bot1
-        case testDevice.bot2.rawValue:
+        case .bot2:
             return userList.bot2
-        case testDevice.bot3.rawValue:
+        case .bot3:
             return userList.bot3
-        case testDevice.bot4.rawValue:
+        case .bot4:
             return userList.bot4
         default:
             return userList.local
         }
+
     }
 
     func isBitrise() -> Bool {
