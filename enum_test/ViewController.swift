@@ -38,10 +38,10 @@ class ViewController: UIViewController {
         let userList: UserAssetList = try! JSONDecoder().decode(UserAssetList.self, from: data)
 
         let deviceName = "iPhone X" // org: YMTGetDeviceName.share.getDeviceName()
-        let systemVersion = UIDevice().systemVersion
+        let systemVersion = "11.4.1"// org: UIDevice().systemVersion
         let device = testDevice(rawValue: "\(deviceName)_\(systemVersion)")
 
-        if !isBitrise() {
+        if /*!*/isBitrise() {
             return userList.local
         }
 
