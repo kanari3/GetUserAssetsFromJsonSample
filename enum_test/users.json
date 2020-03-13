@@ -1,0 +1,22 @@
+{
+    "local": {
+        "email": "local@gmail.com",
+        "password": "password",
+    },
+    "bot1": {
+        "email": "bot1@gmail.com",
+        "password": "password",
+    },
+    "bot2": {
+        "email": "bot2@gmail.com",
+        "password": "password",
+    },
+    "bot3": {
+        "email": "bot3@gmail.com",
+        "password": "password",
+    },
+    "bot4": {
+        "email": "bot4@gmail.com",
+        "password": "password",
+    },
+}
